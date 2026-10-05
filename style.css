@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulav Khaniya | Personal Portfolio</title>
+</head>
+
+<body>
+<link rel="stylesheet" href="css/style.css">
+    <header>
+        <h1>Hi, I'm Sulav Khaniya</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <img src="sulav.jpg"
+                 alt="Profile image of Sulav Khaniya"
+                 width="180"
+                 height="180">
+
+            <p>
+                My name is Sulav Khaniya, and I am a student interested in
+                web development and information technology. I have a passion
+                for creating interactive and user-friendly websites.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <dl>
+                <dt>HTML5</dt>
+                <dd>Creating structured webpages with semantic HTML elements.</dd>
+
+                <dt>Web Accessibility</dt>
+                <dd>
+                    Using labels, alternative text, headings, and meaningful
+                    page structure.
+                </dd>
+            </dl>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <article>
+                <h3>Semantic HTML Portfolio</h3>
+
+                <p>
+                    A single-page personal portfolio created using semantic
+                    HTML5 without CSS or inline styling.
+                </p>
+
+                <p>
+                    <a href="https://github.com/Sulavkhaniya/sulav_khaniya">
+                        View Project Repository
+                    </a>
+                </p>
+            </article>
+
+            <article>
+                <h3>HTML Week 1 Project</h3>
+
+                <p>
+                    An HTML practice project demonstrating basic webpage
+                    structure and HTML elements.
+                </p>
+
+                <p>
+                    <a href="https://github.com/Sulavkhaniya/html/blob/main/week1.html">
+                        View Project Repository
+                    </a>
+                </p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                If you would like to get in touch, please fill out the form below:
+            </p>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              cols="30"
+                              required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Send Message</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>2026 Sulav Khaniya. Built with semantic HTML5.</p>
+    </footer>
+
+</body>
+</html>
