@@ -1,132 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sulav Khaniya | Personal Portfolio</title>
-</head>
+/* =========================
+   General Page Styling
+========================= */
 
-<body>
-<link rel="stylesheet" href="css/style.css">
-    <header>
-        <h1>Hi, I'm Sulav Khaniya</h1>
+body {
+    background-color: #f5f7f6;
+    color: #263238;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
 
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+/* =========================
+   Header
+========================= */
 
-    <main>
+header {
+    background-color: #17221f;
+    color: #ffffff;
+    padding: 20px;
+}
 
-        <section id="about">
-            <h2>About Me</h2>
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
-            <img src="sulav.jpg"
-                 alt="Profile image of Sulav Khaniya"
-                 width="180"
-                 height="180">
+/* =========================
+   Navigation Bar
+========================= */
 
-            <p>
-                My name is Sulav Khaniya, and I am a student interested in
-                web development and information technology. I have a passion
-                for creating interactive and user-friendly websites.
-            </p>
-        </section>
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
+.nav-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
 
-            <dl>
-                <dt>HTML5</dt>
-                <dd>Creating structured webpages with semantic HTML elements.</dd>
+.nav-bar a:hover {
+    background-color: #2e8b70;
+    color: #ffffff;
+}
 
-                <dt>Web Accessibility</dt>
-                <dd>
-                    Using labels, alternative text, headings, and meaningful
-                    page structure.
-                </dd>
-            </dl>
-        </section>
+/* =========================
+   Main Content
+========================= */
 
-        <section id="projects">
-            <h2>Projects</h2>
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
 
-            <article>
-                <h3>Semantic HTML Portfolio</h3>
+/* =========================
+   Section Containers
+========================= */
 
-                <p>
-                    A single-page personal portfolio created using semantic
-                    HTML5 without CSS or inline styling.
-                </p>
+.about-container,
+.projects-container,
+.skills-container,
+.contact-container,
+.education-container {
+    background-color: #ffffff;
+    color: #245c4a;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 15px rgba(23, 34, 31, 0.15);
+    border-left: 5px solid #2e8b70;
+    transition: 0.3s ease;
+}
 
-                <p>
-                    <a href="https://github.com/Sulavkhaniya/sulav_khaniya">
-                        View Project Repository
-                    </a>
-                </p>
-            </article>
+/* Section hover effect */
 
-            <article>
-                <h3>HTML Week 1 Project</h3>
+.about-container:hover,
+.projects-container:hover,
+.skills-container:hover,
+.contact-container:hover,
+.education-container:hover {
+    box-shadow: 0 10px 25px rgba(23, 34, 31, 0.20);
+}
 
-                <p>
-                    An HTML practice project demonstrating basic webpage
-                    structure and HTML elements.
-                </p>
+/* =========================
+   Headings
+========================= */
 
-                <p>
-                    <a href="https://github.com/Sulavkhaniya/html/blob/main/week1.html">
-                        View Project Repository
-                    </a>
-                </p>
-            </article>
-        </section>
+h1,
+h2,
+h3 {
+    color: #245c4a;
+}
 
-        <section id="contact">
-            <h2>Contact Me</h2>
+h1 {
+    font-size: 2.2rem;
+}
 
-            <p>
-                If you would like to get in touch, please fill out the form below:
-            </p>
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
 
-            <form action="#" method="post">
+h3 {
+    font-size: 1.3rem;
+}
 
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </p>
+/* =========================
+   Links
+========================= */
 
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
+article a {
+    color: #2e8b70;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
 
-                <p>
-                    <label for="message">Message:</label>
-                    <textarea id="message"
-                              name="message"
-                              rows="5"
-                              cols="30"
-                              required></textarea>
-                </p>
+article a:hover {
+    color: #2e3d8b;
+    text-decoration: underline;
+}
 
-                <p>
-                    <button type="submit">Send Message</button>
-                </p>
+/* =========================
+   Projects
+========================= */
 
-            </form>
-        </section>
+.projects-container article {
+    background-color: #f5f7f6;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    </main>
+.projects-container article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(23, 34, 31, 0.15);
+}
 
-    <footer>
-        <p>2026 Sulav Khaniya. Built with semantic HTML5.</p>
-    </footer>
+/* =========================
+   About Section
+========================= */
 
-</body>
-</html>
+.about-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================
+   Forms
+========================= */
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #b7c8c2;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    outline: none;
+    border-color: #2e8b70;
+    box-shadow: 0 0 5px rgba(46, 139, 112, 0.3);
+}
+
+.contact-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+button {
+    background-color: #2e8b70;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #245c4a;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    main {
+        padding: 0 1.5rem;
+    }
+
+    .about-container,
+    .projects-container,
+    .skills-container,
+    .contact-container,
+    .education-container {
+        margin: 1.5rem 0;
+    }
+
+    .nav-bar ul {
+        gap: 12px;
+    }
+
+    .nav-bar a {
+        font-size: 16px;
+    }
+}
+
