@@ -213,30 +213,5 @@ button:hover {
 }
 
 
-/* =========================
-   Tablet
-========================= */
 
-@media (min-width: 769px) and (max-width: 1024px) {
-
-    main {
-        padding: 0 1.5rem;
-    }
-
-    .about-container,
-    .projects-container,
-    .skills-container,
-    .contact-container,
-    .education-container {
-        margin: 1.5rem 0;
-    }
-
-    .nav-bar ul {
-        gap: 12px;
-    }
-
-    .nav-bar a {
-        font-size: 16px;
-    }
-}
 
